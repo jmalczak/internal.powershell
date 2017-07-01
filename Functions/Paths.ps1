@@ -1,23 +1,29 @@
-function home() {
+﻿function home() {
     cd $HOME;
 }
 
-$Global:DOWNLOADS = "$HOME\Downloads";
-
 function downloads() {
-    cd $DOWNLOADS;
+    cd "$HOME\Downloads";
 }
-
-$Global:DESKTOP = "$HOME\Desktop";
 
 function desktop() {
-    cd $DESKTOP;
+    cd "$HOME\Desktop";
 }
 
-$Global:CODE = "$rootPath\..";
+function code() {
+    cd "$rootPath\..";
+}
 
-function co() {
-    cd $CODE;
+function katon() {
+    cd "$rootPath\..\katon";
+}
+
+function chilli() {
+    cd "$rootPath\..\chilli";
+}
+
+function internal() {
+    cd "$rootPath\..\internal";
 }
 
 function cd($path) {
